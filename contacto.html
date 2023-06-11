@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Yeovil Town F.C. - Contact</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <header>
+        
+            <div class="caja">
+                <h1><img src="images/iconYT.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="productos.html">SHOP</a></li>
+                        <li><a href="contacto.html">CONTACT PAGE</a></li>
+                    </ul>
+                </nav>
+            </div>
+       
+        </header>
+        <main>
+            <form>
+                <label for="nombreapellido">Full Name</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+        
+                  <label for="correoelectronico">Email</label>
+                 <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@domain.com">
+        
+                <label for="telefono">Phone Number</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label for="mensaje">Write Your Message Here</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+                <fieldset> <!-- Es lo mismo que un div, pero agrupa elementos del mismo grupo -->
+                    <legend>How would you like us to contact you?</legend> <!-- Es un 'p' para un 'fieldset' -->
+                    <!-- Con la propiedad 'name' se avisa que son del mismo grupo de inputs. Permite seleccionar solo uno de ellos-->
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Phone Call</label>
+                
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+            
+                </fieldset>     
+
+                <fieldset>
+                    <legend>What time slot would you prefer to be attended?</legend>
+                    
+                    <select>
+                        <option>Morning</option>
+                        
+                        <option>Afternoon</option>
+                        
+                        <option>Night</option>
+                    </select>
+
+                </fieldset>
+
+                <label><input type="checkbox" class="checkbox" checked>Would you like to receive updates from the club?</label> 
+
+                <input type="submit" value="Send" class="enviar">
+            </form>
+
+            <table>
+                <!-- Encabezado de una tabla -->
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Schedule</th>
+                    </tr>
+                </thead>
+                <!-- Cuerpo de una tabla -->
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <footer>
+            <img src="images/iconYT.png">
+            <p class="copyright">&copy Copyright Yeovil Town F.C. - 2023</p>
+        </footer>
+    </body>
+</html>
+    
